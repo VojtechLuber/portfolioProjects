@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #C6C7CD;
+}
+
+html {
+            scroll-behavior: smooth;
+        }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #20242D;
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  
+}
+
+/* Navigační lišta */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    height: 4rem;
+    background-color: rgb(3, 6, 23);
+}
+
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#page-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1.25rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 0.625rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.3125rem 0.625rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(18, 173, 184);
+    border-radius: 5px;
+}
+
+.contactBtn {
+    padding: 0.3125rem 0.625rem;
+    border-radius: 5px;
+    background-color: rgb(18, 173, 184);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+/*      Hamurger menu             */
+
+
+
+
+
+/*  Home section  */
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  margin: 4rem 9rem;
+  padding: 0 2rem;
+  
+  
+  
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zarovnání na střed */
+  max-width: 50%;
+  margin: auto;
+}
+
+.home-text {
+  margin: 1rem 0;
+}
+
+.home-text h2 {
+  margin-bottom: 1rem;
+}
+
+.home-text p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Zarovnání na střed */
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-block;
+}
+
+.social-icon img {
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 40%;
+  overflow: hidden;
+  margin: auto; /* Zarovnání na střed */
+}
+
+.homeFoto {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  left: 3%;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px #000000;
+  white-space: pre-wrap;
+  overflow: hidden;
+  animation: blink-caret 0.75s step-end infinite;
+  text-align: center;
+  padding: 120px 15px 1px 7px;
+  width: 98%;
+  height: 80%;
+}
+
+.newline {
+  display: block;
+}
+
+/* About section */
+#about {
+  background-color: rgb(50, 56, 70);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  padding: 4rem 2rem;
+  
+  margin: auto 9rem;
+  
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; /* Zarovnání na střed */
+}
+
+.circle-image {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  clip-path: circle(50% at center);
+  background-color: rgb(18, 173, 184);
+}
+
+.about-text {
+  max-width: 60%;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+  color: rgb(18, 173, 184);
+}
+
+.about-text p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Skills section */
+#skills {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 4rem;
+}
+
+.skills-section {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto; /* Zarovnání na střed */
+}
+
+.skills-section .skills-box:nth-child(2) ul {
+  display: flex;
+  justify-content: center;
+  gap: 6.25rem;
+}
+
+.skills-box {
+  flex: 1 0 45%;
+  background-color: #111828;
+  padding: 1.3rem;
+  margin: 1.3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-box h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.skills-box ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.skills-box ul li {
+  margin: 10px 0;
+  padding: 1rem;
+}
+
+/* Projects section */
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  padding: 5rem;
+  background-color: rgb(50, 56, 70);
+}
+
+.projects-section h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.project {
+  flex: 1 1 calc(16.66% - 1.25rem);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  margin-bottom: 1.25rem;
+}
+
+.project img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  
+}
+
+.project-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 0 0 10px 10px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project:hover .project-description {
+  opacity: 1;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(1px);
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 500px;
+  height: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.modal-body {
+  margin-top: 20px;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #aaa;
+}
+
+.modal-content img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  max-height: 70vh;
+  width: 35rem;
+  height: 20rem;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.modal-content a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.modal-content a:hover {
+  text-decoration: underline;
+}
+
+.modal-content .github-icon {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.modal-content .github-icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* FOOTER Kontakt */
+
+
+footer h2 {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.form-container {
+  max-width: 50rem;
+  margin: auto;
+  padding: 1.8rem;
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  text-align: center;
+}
+
+.forms {
+  text-align: start;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+  color: black;
+}
+
+.form-group textarea {
+  height: 10rem;
+}
+
+.btnCent {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group button {
+  background-color: rgb(18, 173, 184);
+  color: white;
+  border: none;
+  padding: 12px 6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.form-group button:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1349px) {
+    .text-overlay {
+        display: none;
+    }
+   
+
+}
+
+
+@media (max-width: 903px) {
+    .projects-section {
+        display: flex;
+        flex-wrap: nowrap; /* Zabraňuje zalamování na nový řádek */
+        overflow-x: auto; /* Přidává horizontální posouvání */
+        gap: 1rem; /* Mezera mezi projekty */
+        padding: 1rem; /* Vnější odsazení */
+    }
+    
+    .project {
+        flex: 0 0 50%; /* Zobrazuje 2 projekty na šířku */
+        max-width: 50%;
+        position: relative; /* Pro polohu popisků projektů */
+    }
+
+    .project img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .project-description {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .project:hover {
+        transform: scale(1.05);
+    }
+
+    .project:hover .project-description {
+        opacity: 1;
+    }
+
+
+  #home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem 2rem;
+  }
+
+  .home-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image-container {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .home-text {
+    max-width: 100%;
+  }
+
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zarovnání na střed */
+  max-width: 50%;
+  margin: auto;
+}
+
+.home-text {
+  margin: 1rem 0;
+}
+
+.home-text h2 {
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Zarovnání na střed */
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-block;
+}
+
+.social-icon img {
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 40%;
+  overflow: hidden;
+  margin: auto; /* Zarovnání na střed */
+}
+
+.homeFoto {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  left: 3%;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px #000000;
+  white-space: pre-wrap;
+  overflow: hidden;
+  animation: blink-caret 0.75s step-end infinite;
+  text-align: center;
+  padding: 120px 15px 1px 7px;
+  width: 98%;
+  height: 80%;
+}
+
+.newline {
+  display: block;
+}
+}
+
+/* About section */
+  #about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    margin: auto 2rem;
+  }
+
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; /* Zarovnání na střed */
+}
+
+.circle-image {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.circle-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  clip-path: circle(50% at center);
+  background-color: rgb(18, 173, 184);
+}
+
+.about-text {
+  max-width: 80%;
+  text-align: center;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+  color: rgb(18, 173, 184);
+}
+
+.about-text p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+
+@media (max-width: 755px) {
+    #skills .skills-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 1rem;
+        margin: auto; /* Zarovnání na střed */
+    }
+
+    #skills .skills-box {
+        flex: 1 0 100%; /* Všechny skills-box mají 100% šířku */
+        background-color: #111828;
+        padding: 1.3rem;
+        margin: 1.3rem 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #skills .skills-box h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #skills .skills-box ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    #skills .skills-box ul li {
+        margin: 10px;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 660px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15rem;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+
+
+
+.home-content {
+    max-width: 90%; /* Zmenšit maximální šířku na menších obrazovkách */
+  }
+
+
+.home-text {
+  margin: 1rem 0;
+  text-align: center; /* Zarovnání textu na střed */
+}
+
+.home-text h2 {
+  margin-bottom: 1rem;
+}
+
+.home-text p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+}

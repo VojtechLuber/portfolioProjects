@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <form action="/" method="GET">
+        <label for="user-name">Your name</label>
+        <input type="text" name="user-name" id="user-name" required placeholder="Enter your name">
+
+        <label for="usermessage">Your message</label>
+        <textarea name="user-message" id="usermessage" placeholder="Enter your message" rows="8"></textarea>
+
+
+        <label for="user-email">Email</label>
+        <input type="email" name="user-email" id="user-email">
+        <label for="userage">Your Age</label>
+        <input type="number" step="1" name="userage" id="userage">
+        <label for="user-password">Your Password</label>
+        <input type="password" name="user-password" id="user-password" required minlength="8">
+        <label for="birthdate"></label>
+        <input type="date" name="birthdate" id="birthdate">
+        <hr>
+
+        <label for="favorite-color">Your favorite color?</label>
+        <select name="favorite-color" id="favorite-color">
+            <option value="blue">blue</option>
+            <option value="black">black</option>
+            <option value="red">red</option>
+        </select>
+
+
+        <section>
+            <h2>How should we verify your account</h2>
+            <ul>
+                <li class="form-control-inline">
+                    <input type="radio" id="verify-text" name="verify" value="message">
+                    <label for="verify-text">Text message</label>
+                </li>
+                <li class="form-control-inline">
+                    <input type="radio" id="verify-phone" name="verify" value="phone">
+                    <label for="verify-phone">Phone call</label>
+                </li>
+                <li class="form-control-inline">
+                    <input type="radio" id="verify-email" name="verify" value="email">
+                    <label for="verify-email">An email</label>
+                </li>
+                <hr>
+                <li class="form-control-inline">
+                    <input type="checkbox" id="contact-email" name="contact">
+                    <label for="contact-email">Email</label>
+                </li>
+                <li class="form-control-inline">
+                    <input type="checkbox" id="contact-phone" name="contact">
+                    <label for="contact-phone">Phone</label>
+                </li>
+            </ul>
+        </section>
+
+
+
+
+        <section>
+            <button>Submit</button>
+        </section>
+    </form>
+
+</body>
+</html>

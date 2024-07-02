@@ -1,0 +1,59 @@
+header {
+    margin-bottom: 2rem; /* Upraveno pro responzivitu */
+    text-align: center; /* Zarovnání textu do středu */
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(71, 62, 62);
+    margin: 0;
+}
+
+#description {
+    margin-bottom: 0.75rem;
+}
+
+a {
+    background-color: rgb(167, 1, 78);
+    color: white;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 0.7rem 2rem; /* Upraveno pro responzivitu */
+    display: inline-block;
+    margin-top: 1rem; /* Upraveno pro responzivitu */
+}
+
+a:hover {
+    background-color: rgb(180, 12, 12);
+    text-decoration: none;
+}
+
+ol {
+    list-style: none;
+    width: 100%; /* Upraveno pro responzivitu */
+    max-width: 31.5rem; /* Přidána maximální šířka pro větší obrazovky */
+    margin: 2.2rem auto 0 auto;
+    padding: 0;
+}
+
+li {
+    padding: 1rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2.2rem; /* Upraveno pro responzivitu */
+    background-color: rgb(223, 136, 124);
+    border-radius: 6px;
+}
+
+h2 {
+    color: rgb(78, 13, 5);
+    font-family: 'Oswald', sans-serif;
+}
+
+main p {
+    margin: 0.8rem 0;
+    color: rgb(71, 29, 22);
+}
+
+.highlight-goal {
+    background-color: rgb(224, 109, 94);
+}

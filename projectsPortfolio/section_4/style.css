@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: -1.25rem;
+}
+
+header img {
+    max-width: 100%; /* Přizpůsobeno pro responzivitu */
+    height: auto;
+}
+
+main {
+    background-color: rgb(122, 74, 218);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 90%; /* Přizpůsobeno pro responzivitu */
+    border-radius: 9px;
+    color: rgb(248, 241, 255);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0.8rem 0;
+    padding-left: 0.6rem;
+    border-left: 5px solid transparent;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 3, 102);
+    background-color: rgb(255, 237, 177);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+a:hover,
+a:active {
+    background-color: rgb(250, 201, 39);
+}
+
+.important {
+    color: rgb(255, 237, 177);
+    border-color: rgb(247, 209, 85);
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    color: rgb(131, 113, 149);
+    margin-top: 2rem;
+    margin-bottom: 6.2rem;
+}
+
+footer a {
+    padding: 0.8rem 1.4rem;
+    border-radius: 8px;
+    background-color: rgb(250, 201, 39);
+}
+
+/* Media queries pro responzivitu */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
